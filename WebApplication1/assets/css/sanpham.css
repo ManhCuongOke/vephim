@@ -1,0 +1,528 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #0a0a0a;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* ======================HEADER====================== */
+#header {
+    width: 100%;
+    position: relative;
+}
+
+    #header .DangKi-DangNhap {
+        background: #3f3f3f;
+        text-align: right;
+        color: white;
+        padding-right: 10px;
+    }
+
+        #header .DangKi-DangNhap .DangKi {
+            display: inline-block;
+            text-decoration: none;
+            color: red;
+        }
+
+            #header .DangKi-DangNhap .DangKi a {
+                color: white;
+                text-decoration: none;
+            }
+
+                #header .DangKi-DangNhap .DangKi a:hover {
+                    color: red;
+                }
+
+
+        #header .DangKi-DangNhap .DangNhap {
+            display: inline-block;
+            color: red;
+            padding-left: 4px;
+            text-decoration: none;
+        }
+
+            #header .DangKi-DangNhap .DangNhap a {
+                color: white;
+                text-decoration: none;
+            }
+
+                #header .DangKi-DangNhap .DangNhap a:hover {
+                    color: red;
+                }
+
+
+    #header .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        #header .container .TenThuongHieu {
+            margin-top: 5px;
+            flex-basis: 20%;
+            font-size: 24px;
+        }
+
+            #header .container .TenThuongHieu a:hover {
+                text-decoration: none;
+                background: #181818;
+                color: red;
+            }
+
+
+        #header .container nav {
+            flex-basis: 60%;
+        }
+
+            #header .container nav ul#main-menu {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+                /* #header .container nav ul#main-menu li a{
+    color: white;
+} */
+
+                #header .container nav ul#main-menu li a:hover {
+                    color: red;
+                    background: #181818;
+                    text-decoration: none;
+                }
+
+        #header .container .giohang {
+            flex-basis: 20%;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+            #header .container .giohang a i {
+                color: white;
+                font-size: 1.66rem;
+                position: relative;
+            }
+
+                #header .container .giohang a i span {
+                    position: absolute;
+                    font-size: 0.66rem;
+                    background: red;
+                    border-radius: 50%;
+                    width: 20px;
+                    line-height: 20px;
+                    top: -10px;
+                    right: -10px;
+                    text-align: center;
+                }
+
+                #header .container .giohang a i:hover {
+                    color: red;
+                    background: #181818;
+                }
+
+        #header .container .navbar-toggle {
+            position: relative;
+            display: none;
+        }
+
+    #header nav ul#menu-response {
+        display: none;
+        position: relative;
+    }
+
+/* ======================WP-CONTENT====================== */
+#wp-content {
+    max-width: 960px;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.875rem;
+}
+
+    #wp-content .product-header {
+        text-align: center;
+        font-size: 0.875rem;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    #wp-content .product-all {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+        #wp-content .product-all .movie-ticket-price {
+            flex: 20% 0 1;
+            font-size: 12px;
+        }
+
+            #wp-content .product-all .movie-ticket-price .header-movie-ticket-price {
+                color: red;
+                font-size: 1.25rem;
+                padding: 5px;
+            }
+.header-movie-ticket-price {
+    display : none;
+}
+#radioPrice {
+    display: none;
+}
+
+#Button2 {
+    display: none;
+}
+
+#wp-content .product-all .header-find-price {
+    color: red;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+        #wp-content .product-all #findPrice #inputtimkiem {
+            width: 60%;
+        }
+
+#wp-content .product-all .container {
+    flex: 80% 0 1;
+}
+
+            #wp-content .product-all .container ul.list-product {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+                #wp-content .product-all .container ul.list-product li.product-items {
+                    flex: 25% 0 1;
+                    height: auto;
+                    padding: 1%;
+                }
+
+                    #wp-content .product-all .container ul.list-product li.product-items:hover .more-info a {
+                        color: red;
+                    }
+
+                    #wp-content .product-all .container ul.list-product li.product-items a img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    #wp-content .product-all .container ul.list-product li.product-items .more-info a {
+                        display: block;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+
+.line-white {
+    margin-top: 50px;
+    padding: 1px;
+    background: white;
+    margin-bottom: 15px;
+}
+
+/* ======================FIND-CONTENT====================== */
+.display-flex {
+    display : flex;
+    flex-direction : row;
+}
+.movieFind {
+    display : inline-block;
+    width: 30%;
+    padding : 10px;
+}
+
+    .movieFind img {
+        width : 100%;
+        height : auto;
+    }
+
+    .movieFind a.movie-name {
+        text-decoration: none;
+        color : white;
+        display : block;
+    }
+
+    .movieFind:hover a.movie-name {
+        color: red;
+    }
+        /* ======================FOOTER====================== */
+        #footer {
+            max-width: 960px;
+            color: white;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+
+    #footer h2 {
+        color: red;
+    }
+
+    /* #wp-content .line-white{
+    margin-top: 10px;
+    padding: 1px;
+    background: white;
+    margin-bottom: 50px;
+} */
+
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        #footer .container .introduce {
+            flex: 25% 0 1;
+            padding-left: 1%;
+        }
+
+            #footer .container .introduce a {
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+        #footer .container .contact-information {
+            flex: 25% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .associate {
+            flex: 25% 0 1;
+            padding-left: 1%;
+        }
+
+            #footer .container .associate a {
+                color: white;
+                text-decoration: none;
+            }
+
+        #footer .container .support {
+            flex: 25% 0 1;
+            padding-left: 1%;
+        }
+
+            #footer .container .support a {
+                text-decoration: none;
+                color: white;
+            }
+
+
+/* Large devices (desktop, less than 1200px) */
+@media (max-width: 1199.92px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #wp-content .product-all .container ul.list-product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+        #wp-content .product-all .container ul.list-product li.product-items {
+            flex: 32.33% 0 1;
+            height: auto;
+            padding: 1%;
+        }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ======================HEADER====================== */
+
+
+    #header .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+        #header .container .navbar-toggle {
+            flex: 20% 0 1;
+        }
+
+        #header .container .TenThuongHieu {
+            flex: 60% 0 1;
+            text-align: center;
+        }
+
+        #header .container .giohang {
+            flex: 20% 0 1;
+        }
+
+    #header .container nav ul#main-menu {
+        flex-basis: 0%;
+        display: none;
+    }
+
+
+
+    #header .container .navbar-toggle {
+        display: block;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    #header nav ul#menu-response {
+        display: none;
+        position: absolute;
+        color: white;
+        background: #232323;
+        width: 100%;
+        top: 65px;
+    }
+
+        #header nav ul#menu-response li a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #header nav ul#menu-response li:hover {
+            background: #434343;
+        }
+
+    #header .container .TenThuongHieu a {
+        font-size: 1.25rem;
+    }
+
+
+    /* ======================WP-CONTENT====================== */
+
+
+    #wp-content .product-all .movie-ticket-price {
+        flex: 25% 0 1;
+        font-size: 12px;
+    }
+
+    #wp-content .product-all .container {
+        flex: 75% 0 1;
+    }
+
+        #wp-content .product-all .container ul.list-product {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+            #wp-content .product-all .container ul.list-product li.product-items {
+                flex: 49% 0 1;
+                height: auto;
+                padding: 1%;
+            }
+
+    /* ======================FOOTER====================== */
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+        #footer .container .introduce {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .contact-information {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .associate {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .support {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* ======================HEADER====================== */
+
+    #header .container .TenThuongHieu {
+        margin-left: 2%;
+        flex-basis: 50%;
+    }
+
+    #header .container .navbar-toggle {
+        margin-right: 2%;
+    }
+
+    /* ======================WP-CONTENT====================== */
+    #wp-content .product-all {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+
+        #wp-content .product-all .movie-ticket-price {
+            flex: 40% 0 1;
+            font-size: 12px;
+            margin-left: 2%;
+        }
+
+        #wp-content .product-all .container {
+            flex: 60% 0 1;
+        }
+
+            #wp-content .product-all .container ul.list-product {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+                #wp-content .product-all .container ul.list-product li.product-items {
+                    flex: 49%% 0 1;
+                    height: auto;
+                    padding: 1%;
+                }
+
+
+    /* ======================FOOTER====================== */
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px 50px;
+    }
+
+        #footer .container .introduce {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .contact-information {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .associate {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .support {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+}

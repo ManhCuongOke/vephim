@@ -1,0 +1,535 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #0a0a0a;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* ======================HEADER====================== */
+#header {
+    width: 100%;
+    position: relative;
+}
+
+    #header .DangKi-DangNhap {
+        background: #3f3f3f;
+        text-align: right;
+        color: white;
+        padding-right: 10px;
+    }
+
+        #header .DangKi-DangNhap .DangKi {
+            display: inline-block;
+            text-decoration: none;
+            color: red;
+        }
+
+            #header .DangKi-DangNhap .DangKi a {
+                color: white;
+                text-decoration: none;
+            }
+
+                #header .DangKi-DangNhap .DangKi a:hover {
+                    color: red;
+                }
+
+
+        #header .DangKi-DangNhap .DangNhap {
+            display: inline-block;
+            color: red;
+            padding-left: 4px;
+            text-decoration: none;
+        }
+
+            #header .DangKi-DangNhap .DangNhap a {
+                color: white;
+                text-decoration: none;
+            }
+
+                #header .DangKi-DangNhap .DangNhap a:hover {
+                    color: red;
+                }
+
+
+    #header .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        #header .container .TenThuongHieu {
+            margin-top: 5px;
+            flex-basis: 20%;
+            font-size: 24px;
+        }
+
+            #header .container .TenThuongHieu a:hover {
+                text-decoration: none;
+                background: #181818;
+                color: red;
+            }
+
+
+        #header .container nav {
+            flex-basis: 60%;
+        }
+
+            #header .container nav ul#main-menu {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+                /* #header .container nav ul#main-menu li a{
+    color: white;
+} */
+
+                #header .container nav ul#main-menu li a:hover {
+                    color: red;
+                    background: #181818;
+                    text-decoration: none;
+                }
+
+        #header .container .giohang {
+            flex-basis: 20%;
+            margin-top: 10px;
+            text-align: right;
+        }
+
+            #header .container .giohang a i {
+                color: white;
+                font-size : 1.66rem;
+                position : relative;
+            }
+
+                #header .container .giohang a i span {
+                    position: absolute;
+                    font-size: 0.66rem;
+                    background: red;
+                    border-radius: 50%;
+                    width: 20px;
+                    line-height: 20px;
+                    top: -10px;
+                    right: -10px;
+                    text-align: center;
+                }
+
+                #header .container .giohang a i:hover {
+                    color: red;
+                    background: #181818;
+                }
+
+        #header .container .navbar-toggle {
+            position: relative;
+            display: none;
+        }
+
+    #header nav ul#menu-response {
+        display: none;
+        position: relative;
+    }
+
+/* ======================WP-CONTENT====================== */
+#wp-content {
+    width : 100%;
+    height: auto;
+}
+
+    #wp-content .head-content {
+        padding-top: 2px;
+        background: white;
+    }
+
+        #wp-content .head-content h1 {
+            padding : 70px;
+            color: red;
+            text-align: center;
+            background: black;
+        }
+
+    #wp-content .container-content {
+        display: flex;
+        flex-direction: row;
+        max-width: 1500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+        #wp-content .container-content .container-left {
+            flex : 40% 0 1;
+            margin-right : 4%;
+        }
+
+            #wp-content .container-content .container-left li.item-img {
+                width: 100%;
+                height: auto;
+            }
+
+            #wp-content .container-content .container-left li.item-img img {
+                width: 100%;
+                height: auto;
+                padding-bottom : 2%;
+            }
+
+                #wp-content .container-content .container-right {
+                    flex: 60% 0 1;
+                    color : white;
+                }
+
+                    #wp-content .container-content .container-right .movie-name {
+                        color : red;
+                        font-size : 1.5rem;
+                    }
+
+                    #wp-content .container-content .container-right .movie-title {
+                        font-size: 1.5rem;
+                    }
+
+#nameMovieHeader {
+    left : 20px;
+    color : white;
+}
+
+
+.movie-ticket-control .btn-buy-watchTrailer {
+    margin-top: 10px;
+}
+                     
+.movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:first-child {
+    padding: 10px 140px;
+}
+
+    .movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:last-child {
+        padding: 10px 168px;
+    }
+
+
+    .movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:hover {
+        background : red;
+    }
+
+.movie-description h2 {
+    margin-top : 10px;
+    color : red;
+}
+
+.container-movie-ticket-add .head-movie-ticket-add h1 {
+    color : red;
+    padding : 100px;
+    text-align : center;
+}
+
+#wp-content .product-1 {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+
+    #wp-content .product-1 .product-header {
+        text-align: center;
+        padding: 100px;
+        text-transform: uppercase;
+    }
+
+        #wp-content .product-1 .product-header h1 {
+            color: white;
+        }
+
+            #wp-content .product-1 .product-header h1:hover {
+                color: red;
+            }
+
+    #wp-content .product-1 ul.product-container-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        #wp-content .product-1 ul.product-container-1 .product-items {
+            flex-basis: 20%;
+            margin-right: 10px;
+        }
+
+            #wp-content .product-1 ul.product-container-1 .product-items img {
+                width: 100%;
+                height: auto;
+            }
+
+
+            #wp-content .product-1 ul.product-container-1 .product-items a {
+                display: block;
+                text-decoration: none;
+                color: white;
+            }
+
+            #wp-content .product-1 ul.product-container-1 .product-items:hover a {
+                color: red;
+            }
+
+/* ======================FOOTER====================== */
+#footer {
+    max-width: 960px;
+    color: white;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+    #footer h2 {
+        color: red;
+    }
+
+#wp-content .line-white {
+    margin-top: 15px;
+    padding: 1px;
+    background: white;
+    margin-bottom: 15px;
+}
+
+#footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    #footer .container .introduce {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+        #footer .container .introduce a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+    #footer .container .contact-information {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+    #footer .container .associate {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+        #footer .container .associate a {
+            color: white;
+            text-decoration: none;
+        }
+
+    #footer .container .support {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+        #footer .container .support a {
+            text-decoration: none;
+            color: white;
+        }
+
+/* Large devices (desktop, less than 1200px) */
+@media (max-width: 1199.92px) {
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ======================HEADER====================== */
+
+    #header .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+        #header .container .navbar-toggle {
+            flex: 20% 0 1;
+        }
+
+        #header .container .TenThuongHieu {
+            flex: 60% 0 1;
+            text-align: center;
+        }
+
+        #header .container .giohang {
+            flex: 20% 0 1;
+        }
+
+        #header .container nav ul#main-menu {
+            flex-basis: 0%;
+            display: none;
+        }
+
+
+    #header .container .navbar-toggle {
+        display: block;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    #header nav ul#menu-response {
+        /* display: none; */
+        position: absolute;
+        color: white;
+        background: #232323;
+        width: 100%;
+        top: 65px;
+    }
+
+        #header nav ul#menu-response li a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #header nav ul#menu-response li:hover {
+            background: #434343;
+        }
+
+    #header .container .TenThuongHieu a {
+        font-size: 1.25rem;
+    }
+
+
+    /* ======================WP-CONTENT====================== */
+    /* -------------product-1------------- */
+    #wp-content .product-1 ul.product-container-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+        #wp-content .product-1 ul.product-container-1 .product-items {
+            flex: 32.33% 0 1;
+            margin-right: 1%;
+            margin-bottom: 2%;
+        }
+
+    .movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:first-child {
+        padding: 10px 70px;
+    }
+
+    .movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:last-child {
+        padding: 10px 98px;
+    }
+
+    /* ======================FOOTER====================== */
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+        #footer .container .introduce {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .contact-information {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .associate {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .support {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* ======================HEADER====================== */
+
+    #header .container .TenThuongHieu {
+        margin-left: 2%;
+        flex-basis: 50%;
+    }
+
+    #header .container .navbar-toggle {
+        margin-right: 2%;
+    }
+    /* ======================WP-CONTENT====================== */
+    .movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:first-child {
+        padding: 10px 40px;
+    }
+
+    .movie-ticket-control .btn-buy-watchTrailer .btn-buy-item:last-child {
+        padding: 10px 68px;
+    }
+
+    .input-qty {
+        width : 50px;
+    }
+    /* -------------product-1------------- */
+    #wp-content .product-1 .product-header h1 {
+        font-size: 1.1875rem;
+    }
+
+    #wp-content .product-1 ul.product-container-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+        #wp-content .product-1 ul.product-container-1 .product-items {
+            flex: 48% 0 1;
+            margin-right: 2%;
+            margin-bottom: 4%;
+        }
+
+
+
+
+        /* ======================FOOTER====================== */
+        #footer .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0px 50px;
+        }
+
+        #footer .container .introduce {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .contact-information {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .associate {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .support {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+}

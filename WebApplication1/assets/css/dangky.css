@@ -1,0 +1,286 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #0a0a0a;
+    color : white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* ======================HEADER====================== */
+#header {
+    max-width : 960px;
+    margin : 0 auto;
+    padding : 20px;
+}
+    #header .TenThuongHieu {
+        padding: 10px;
+        display: inline-block;
+    }
+
+        #header .TenThuongHieu a {
+            text-decoration: none;
+            font-size : 1.5rem;
+        }
+
+            #header .TenThuongHieu a:hover {
+                color :  #ff3a3a;
+                background : #212121;
+            }
+
+            #header .DangKi {
+                padding: 10px;
+                display: inline-block;
+                color : red;
+                font-size : 1.5rem;
+            }
+/* ======================WP-CONTENT====================== */
+#wp-content {
+    background-image: url(../images/dangky/pexels-pixabay-269140.jpg);
+    width: 100%;
+    height: 1000px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+}
+
+    #wp-content .container {
+        width: 550px;
+        margin: 0 auto;
+        height: 500px;
+        background: rgb(0 0 0 / 0.80);
+        top: 25%;
+        left: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+        .form-head {
+            margin: 1px auto 20px auto;
+            font-size: 36px;
+            color: red;
+        }
+
+            #wp-content .container #canhbao {
+                margin: 1px auto 40px auto;
+                font-size: 20px;
+                color: #ff641f;
+                /*display: none;*/
+            }
+
+
+
+            #wp-content .container .name {
+                margin: 0px 0px 10px 30px;
+            }
+
+            #wp-content .container .name #lbname {
+                margin-right : 25px;
+            }
+
+                #wp-content .container .name #tbname {
+                    width: 350px;
+                }
+
+
+            #wp-content .container .email {
+                margin: 0px 0px 10px 30px;
+            }
+
+            #wp-content .container #tbemail {
+                width: 350px;
+            }
+
+            #wp-content .container .email #lbemail {
+                margin-right: 98px;
+            }
+
+        #wp-content .container .password {
+            margin: 0px 0px 10px 30px;
+        }
+
+        #wp-content .container #lbpassword {
+            margin-right: 69px;
+        }
+
+        #wp-content .container #lbrepassword {
+            margin-right: 1px;
+        }
+
+        #wp-content .container #password {
+            width: 350px;
+        }
+
+        #wp-content .container .repassword {
+            margin: 0px 0px 20px 30px;
+        }
+
+        #wp-content .container #repassword {
+            width: 350px;
+        }
+
+        #wp-content .container .dangki-huy {
+            margin: 0px 0px 20px 30px;
+        }
+
+        #wp-content .container .dangky {
+            margin: 0px 0px 20px 30px;
+        }
+
+#dangky:hover {
+    color : red;
+}
+
+#huy:hover {
+    color: red;
+}
+
+
+
+.line-white {
+    padding: 1px;
+    background: white;
+}
+
+
+    /* ======================FOOTER====================== */
+#footer {
+    max-width: 960px;
+    color: white;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 20px;
+}
+
+    #footer h2 {
+        color: red;
+    }
+
+#footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    #footer .container .introduce {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+        #footer .container .introduce a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+    #footer .container .contact-information {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+    #footer .container .associate {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+        #footer .container .associate a {
+            color: white;
+            text-decoration: none;
+        }
+
+    #footer .container .support {
+        flex: 25% 0 1;
+        padding-left: 1%;
+    }
+
+        #footer .container .support a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ======================HEADER====================== */
+
+
+
+    /* ======================WP-CONTENT====================== */
+
+
+
+
+    /* ======================FOOTER====================== */
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+        #footer .container .introduce {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .contact-information {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .associate {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+
+        #footer .container .support {
+            flex: 49% 0 1;
+            padding-left: 1%;
+        }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* ======================HEADER====================== */
+
+
+    /* ======================WP-CONTENT====================== */
+    #wp-content .container #repassword {
+        padding-right: 200px;
+    }
+    /* ======================FOOTER====================== */
+    #footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px 50px;
+    }
+
+        #footer .container .introduce {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .contact-information {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .associate {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+
+        #footer .container .support {
+            flex: 100% 0 1;
+            padding-left: 0;
+        }
+}
